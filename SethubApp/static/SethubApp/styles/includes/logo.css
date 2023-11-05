@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'LilitaOne';
+    src: url('../../fonts/LilitaOne-Regular.ttf');
+}
+
+.logo {
+		color: black;
+		font-family: 'LilitaOne';
+		font-size: 5rem;
+		font-weight:bold;
+		text-transform: uppercase;
+		background:url(../../images/bg-logo.avif) no-repeat center/cover;
+		-webkit-background-clip:text;
+  		-webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'sethubapp/styles/style.css' %}">
+    <link href="{% static 'sethubapp/styles/vendor/fontawesomefree/fontawesome.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'sethubapp/styles/vendor/fontawesomefree/brands.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'sethubapp/styles/vendor/fontawesomefree/solid.css' %}" rel="stylesheet" type="text/css">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <div class="page">
+        {% include "sethubapp/includes/header.html" %}
+        <main class="main">
+            <div class="container">
+                {% block content %} {% endblock %}
+            </div>
+        </main>
+        {% include "sethubapp/includes/footer.html" %}
+    </div>
+</body>
+</html>
